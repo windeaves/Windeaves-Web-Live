@@ -1,2 +1,7 @@
-console.log("Hello World!");
-console.log("Hello Windeaves Live!");
+//import AgoraRTC from 'agora-rtc-sdk'
+
+var fs = require('fs');
+
+var result = JSON.parse( fs.readFileSync("./key/key.json") );
+
+console.log(result);
